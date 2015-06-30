@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="Gomoku, is a traditional, two-player, board game. Each player must place their respective colored pieces on the board. The objective of the game is to get 5 piece in a row. "
+        android:textColor="@color/white" >
+
+        <requestFocus />
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/help" />
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:text="Power-Ups: To make the game more interesting, power-ups are awarded randomly throughout the game. There are two power-ups: extra turn and grey piece. The extra turn power-up, gives the user that received the power up an extra turn to place another piece on the board. The grey piece power-up allows the user to place the grey piece anywhere on the board, including on top of another piece. This allows the user to ‘nullify’ a piece on the board that might have a potential 4-in-a-row. For example, if a grey piece is placed between on the 2nd piece of a four-in-a-row, the new outcome is a one and a two in a row, effectively splitting up the four-in-a-row."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:text="This game was created by Amit, Gina, and Jay"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
